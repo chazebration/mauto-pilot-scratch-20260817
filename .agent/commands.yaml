@@ -1,0 +1,10 @@
+version: 1
+install:
+  command: "npm ci"
+  timeout_seconds: 300
+test:
+  command: "npx vitest run"
+  timeout_seconds: 300
+build:
+  command: "npx tsc --noEmit"
+  timeout_seconds: 300
